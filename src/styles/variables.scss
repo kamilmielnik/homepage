@@ -1,0 +1,74 @@
+$screen-m: 1150px;
+$screen-s: 700px;
+$screen-xs: 400px;
+
+$app-width: 800px;
+
+$shade-0: #000;
+$shade-10: #111;
+$shade-20: #222;
+$shade-30: #444;
+$shade-40: #666;
+$shade-50: #888;
+$shade-60: #AAA;
+$shade-70: #BBB;
+$shade-80: #DDD;
+$shade-90: #EEE;
+$shade-100: #FFF;
+
+$primary: #D42A32;
+$app-background-color: $shade-10;
+$app-foreground-color: $shade-70;
+$app-background-image: url('images/bg.png');
+$app-link-color: $shade-80;
+
+$primary-light: #3F51B5;
+$app-background-color-light: $shade-90;
+$app-foreground-color-light: $shade-10;
+$app-background-image-light: url('images/bg-light.png');
+$app-link-color-light: #3367D6;
+
+$nav-background-color: $shade-0;
+$nav-background-image: url('images/bg-dark.png');
+$nav-foreground-color: $shade-70;
+$nav-foreground-color-highlight: $shade-90;
+
+$font-family: 'Lato', sans-serif;
+$font-size-base: 16px;
+$font-size-xs: 0.75rem;
+$font-size-xs-px: $font-size-base * strip-unit($font-size-xs);
+$font-size-s: 0.875rem;
+$font-size-s-px: $font-size-base * strip-unit($font-size-s);
+$font-size-m: 1rem;
+$font-size-m-px: $font-size-base * strip-unit($font-size-m);
+$font-size-l: 1.125rem;
+$font-size-l-px: $font-size-base * strip-unit($font-size-l);
+$font-size-xl: 1.5rem;
+$font-size-xl-px: $font-size-base * strip-unit($font-size-xl);
+$font-size-xxl: 1.875rem;
+$font-size-xxl-px: $font-size-base * strip-unit($font-size-xxl);
+$font-size-xxxl: 2.625rem;
+$font-size-xxxl-px: $font-size-base * strip-unit($font-size-xxxl);
+
+$border-primary: 1px dashed $primary;
+$border-secondary: 1px dashed $shade-30;
+$border-transparent: 1px solid transparent;
+$box-shadow-inset:
+  rgba(0, 0, 0, 0.7) 1px 1px 0px 0px inset,
+  rgba(0, 0, 0, 0.8) 0px 1px 1px 0px inset,
+  rgba(0, 0, 0, 0.1) 0px 0px 3px 1px inset;
+$box-shadow-inset-light:
+  rgba(0, 0, 0, 0.2) 1px 1px 0px 0px inset,
+  rgba(0, 0, 0, 0.1) 0px 1px 1px 0px inset,
+  rgba(0, 0, 0, 0.05) 0px 0px 3px 1px inset;
+$box-shadow:
+  rgba(0, 0, 0, 0.14) 0px 2px 2px 0px,
+  rgba(0, 0, 0, 0.12) 0px 1px 5px 0px,
+  rgba(0, 0, 0, 0.2) 0px 3px 1px -2px;
+$box-shadow-light:
+  rgba(255, 255, 255, 0.14) 0px 1px 2px 0px,
+  rgba(255, 255, 255, 0.12) 0px 1px 5px 0px,
+  rgba(255, 255, 255, 0.2) 0px 1px 1px -2px;
+$text-shadow-dark: 1px 1px 1px $shade-10;
+$text-shadow-light: 1px 1px $shade-90;
+$micro-animation-duration: 0.1s;

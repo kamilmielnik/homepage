@@ -1,0 +1,35 @@
+$width: 165px;
+
+.table-of-contents {
+  width: $width;
+
+  &.light {
+    .entry {
+      &:before {
+        color: $primary-light;
+      }
+    }
+  }
+
+  @include tablet {
+    display: none;
+  }
+}
+
+.entry {
+  line-height: 1.6rem;
+
+  &:before {
+    content: '•';
+    margin-right: 10px;
+    color: $primary;
+  }
+
+  &:first-child {
+    margin-top: 0;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}

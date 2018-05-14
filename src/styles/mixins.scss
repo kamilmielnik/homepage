@@ -1,0 +1,62 @@
+@mixin small-phone {
+  @media only screen
+    and (max-width: $screen-xs - 1) {
+      @content;
+  }
+}
+
+@mixin phone {
+  @media only screen
+    and (max-width: $screen-s - 1) {
+      @content;
+  }
+}
+
+@mixin tablet {
+  @media only screen
+    and (min-width: $screen-s)
+    and (max-width: $screen-m - 1) {
+      @content;
+  }
+}
+
+@mixin tablet-and-smaller {
+  @media only screen
+    and (max-width: $screen-m - 1) {
+      @content;
+  }
+}
+
+@mixin desktop {
+  @media only screen
+    and (min-width: $screen-m) {
+      @content;
+  }
+}
+
+@mixin color-transition($base-color, $target-color) {
+  color: $base-color;
+  transition: color $micro-animation-duration;
+
+  &:hover {
+    color: $target-color;
+  }
+
+  &:active {
+    color: $target-color;
+  }
+}
+
+@mixin ellipsis() {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+@function strip-unit($number) {
+  @if type-of($number) == 'number' and not unitless($number) {
+    @return $number / ($number * 0 + 1);
+  }
+
+  @return $number;
+}

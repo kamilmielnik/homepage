@@ -1,0 +1,43 @@
+$title-width: 130px;
+
+.labeled-section {
+  display: flex;
+  align-items: baseline;
+  padding: 6px 0;
+
+  &.light {
+    .label {
+      font-weight: 700;
+      color: $shade-0;
+    }
+  }
+
+  @include phone {
+    flex-direction: column;
+  }
+}
+
+.label {
+  flex: 0 0 $title-width;
+  margin-right: 20px;
+  color: $shade-40;
+  font-size: $font-size-xs;
+  font-weight: 400;
+  text-align: right;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+
+  @include phone {
+    flex: 0 0 auto;
+    margin-right: 20px;
+    margin-bottom: 4px;
+  }
+}
+
+.content {
+  width: 100%;
+
+  &.ellipsis {
+    @include ellipsis;
+  }
+}

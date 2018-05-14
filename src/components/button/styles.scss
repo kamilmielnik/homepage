@@ -1,0 +1,44 @@
+$size: 30px;
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: $size;
+  height: $size;
+  border-radius: 5px;
+  cursor: pointer;
+
+  path {
+    fill: $shade-40;
+  }
+
+  &.light {
+    &:hover {
+      box-shadow: $box-shadow;
+    }
+  }
+
+  &.dark {
+    &:hover {
+      box-shadow: $box-shadow-light;
+    }
+  }
+
+  &.pressed {
+    &.light {
+      box-shadow: $box-shadow-inset-light;
+    }
+
+    &.dark {
+      background: rgba(0, 0, 0, 0.2);
+      box-shadow: $box-shadow-inset;
+    }
+
+    svg {
+      position: relative;
+      top: 1px;
+      left: 1px;
+    }
+  }
+}

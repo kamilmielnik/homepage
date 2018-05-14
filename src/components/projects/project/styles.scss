@@ -1,0 +1,16 @@
+.project {
+  position: relative;
+  margin: 80px 0;
+
+  &:first-child {
+    margin-top: 0;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  @include phone {
+    margin: 60px 0;
+  }
+}

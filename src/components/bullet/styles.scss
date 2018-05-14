@@ -1,0 +1,13 @@
+.bullet {
+  display: flex;
+  align-items: center;
+  color: $primary;
+  font-size: $font-size-s-px;
+  line-height: $font-size-s;
+  pointer-events: none;
+  user-select: none;
+
+  &.light {
+    color: $primary-light;
+  }
+}

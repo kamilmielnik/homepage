@@ -1,0 +1,7 @@
+.separator {
+  margin: 0 10px;
+
+  @include phone {
+    margin: 0 5px;
+  }
+}

@@ -1,0 +1,7 @@
+.copyright {
+  text-align: center;
+
+  .link {
+    @include color-transition($shade-80, $shade-90);
+  }
+}

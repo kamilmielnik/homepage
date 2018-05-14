@@ -1,0 +1,20 @@
+.settings {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.select-font-size {
+  flex: 0 1 200px;
+}
+
+.select-theme {
+  margin: 0 30px;
+
+  @include phone {
+    margin: 0 20px;
+  }
+}
+
+.button {
+  flex: 0 0 auto;
+}

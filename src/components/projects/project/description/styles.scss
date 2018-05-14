@@ -1,0 +1,13 @@
+.section {
+  padding-top: 12px;
+  padding-bottom: 6px;
+}
+
+.description {
+  font-size: $font-size-l;
+  line-height: 1.35rem;
+
+  @include phone {
+    font-size: $font-size-m;
+  }
+}

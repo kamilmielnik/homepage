@@ -1,0 +1,15 @@
+.select-theme {
+  display: flex;
+}
+
+.theme {
+  margin: 0 6px;
+
+  &:first-child {
+    margin-left: 0;
+  }
+
+  &:last-child {
+    margin-right: 0;
+  }
+}

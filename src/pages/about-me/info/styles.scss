@@ -1,0 +1,61 @@
+$image-size: 150px;
+$half-image-size: $image-size / 2;
+
+.info {
+  &.light {
+    img {
+      border: $border-transparent;
+    }
+  }
+}
+
+.title, .subtitle {
+  text-align: center;
+  font-weight: 300;
+}
+
+.title {
+  font-size: $font-size-xl;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.subtitle {
+  margin: 10px 0;
+  margin-bottom: 30px;
+  font-size: $font-size-l;
+  letter-spacing: 0.3px;
+
+  @include phone {
+    margin-bottom: 20px;
+  }
+}
+
+.description {
+  margin: 20px 0;
+}
+
+.content {
+  padding-top: 70px;
+  padding-bottom: 15px;
+}
+
+.image {
+  position: absolute;
+  top: -$half-image-size;
+  left: calc(50% - #{$half-image-size});
+  z-index: 1;
+  line-height: 0;
+
+  img {
+    width: $image-size;
+    height: $image-size;
+    border: $border-secondary;
+    border-radius: 50% 50%;
+    user-select: none;
+  }
+}
+
+.no-break {
+  white-space: nowrap;
+}

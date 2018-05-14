@@ -1,0 +1,74 @@
+{
+  "name": "homepage",
+  "description": "Kamil Mielnik's Home Page",
+  "version": "1.0.0",
+  "engines": {
+    "node": ">=6"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kamilmielnik/homepage.git"
+  },
+  "author": {
+    "name": "Kamil Mielnik",
+    "email": "kamil.adam.mielnik@gmail.com",
+    "url": "http://kamilmielnik.com/"
+  },
+  "license": "CC-BY-NC-ND-4.0",
+  "bugs": {
+    "url": "https://github.com/kamilmielnik/homepage/issues"
+  },
+  "homepage": "https://github.com/kamilmielnik/homepage#readme",
+  "scripts": {
+    "analyze-bundle": "better-npm-run analyze-bundle",
+    "build": "better-npm-run build",
+    "lint": "eslint config src --ext .js",
+    "lint:fix": "eslint config src --ext .js --fix",
+    "start": "better-npm-run start",
+    "start:prod": "better-npm-run start:prod"
+  },
+  "betterScripts": {
+    "analyze-bundle": {
+      "command": "webpack-wizard build",
+      "env": {
+        "ANALYZE_BUNDLE": true,
+        "NODE_ENV": "production"
+      }
+    },
+    "build": {
+      "command": "webpack-wizard build",
+      "env": {
+        "NODE_ENV": "production"
+      }
+    },
+    "start": {
+      "command": "webpack-wizard start",
+      "env": {
+        "NODE_ENV": "development"
+      }
+    },
+    "start:prod": {
+      "command": "http-server dist"
+    }
+  },
+  "devDependencies": {
+    "babel-eslint": "^8.2.3",
+    "better-npm-run": "0.1.0",
+    "eslint": "^4.19.1",
+    "eslint-plugin-react": "^7.8.2",
+    "http-server": "0.11.1",
+    "react-hot-loader": "4.1.3",
+    "webpack-bundle-analyzer": "2.11.3",
+    "webpack-wizard": "0.1.0-beta.22"
+  },
+  "dependencies": {
+    "classnames": "2.2.5",
+    "node-normalize-scss": "^8.0.0",
+    "prop-types": "15.6.1",
+    "rc-slider": "^8.6.1",
+    "react": "16.3.2",
+    "react-document-title": "^2.0.3",
+    "react-dom": "16.3.2",
+    "react-router-dom": "4.2.2"
+  }
+}

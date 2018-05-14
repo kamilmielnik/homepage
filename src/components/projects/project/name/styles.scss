@@ -1,0 +1,40 @@
+.section {
+  border-bottom: $border-primary;
+  padding-top: 0;
+  padding-bottom: 12px;
+
+  &.light {
+    text-align: center;
+    border-bottom: $border-transparent;
+
+    .label {
+      display: none;
+    }
+
+    .name {
+      @include color-transition($shade-10, $primary-light);
+      font-weight: 700;
+    }
+  }
+}
+
+.label {
+  visibility: hidden;
+
+  @include phone {
+    display: none;
+  }
+}
+
+.name {
+  @include color-transition($shade-90, $primary);
+  font-size: $font-size-xxxl;
+
+  &:hover {
+    text-decoration: none;
+  }
+
+  @include phone {
+    font-size: $font-size-xxl;
+  }
+}

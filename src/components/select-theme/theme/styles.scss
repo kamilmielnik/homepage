@@ -1,0 +1,20 @@
+$size: 30px;
+
+.theme {
+  width: $size;
+  height: $size;
+  border-radius: 5px;
+  cursor: pointer;
+
+  &.light {
+    background-color: $app-background-color-light;
+    background-image: $app-background-image-light;
+    box-shadow: $box-shadow-light;
+  }
+
+  &.dark {
+    background-color: $app-background-color;
+    background-image: $app-background-image;
+    box-shadow: $box-shadow;
+  }
+}

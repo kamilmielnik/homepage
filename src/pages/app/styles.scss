@@ -1,0 +1,72 @@
+$spacing-large: 40px;
+$spacing-small: $spacing-large / 2;
+$footer-height: 159px;
+$nav-height: 63px;
+$nav-height-table: 49px;
+
+.app {
+  background: $app-background-color;
+  background-image: $app-background-image;
+  color: $app-foreground-color;
+  text-shadow: $text-shadow-dark;
+
+  code {
+    font-family: $font-family;
+  }
+
+  &.light {
+    background: $app-background-color-light;
+    background-image: $app-background-image-light;
+    color: $app-foreground-color-light;
+    text-shadow: $text-shadow-light;
+  }
+}
+
+.navigation {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.settings {
+  margin-bottom: $spacing-large;
+
+  @include phone {
+    margin: 0 $spacing-large / 2;
+    margin-bottom: $spacing-small;
+  }
+}
+
+.content {
+  position: relative;
+  min-height: calc(100vh - #{$footer-height} - #{$nav-height});
+  max-width: $app-width;
+  margin: 0 auto;
+  padding: $spacing-large $spacing-large / 2;
+  padding-bottom: 2 * $spacing-large;
+  width: 100%;
+
+  @include tablet {
+    min-height: calc(100vh - #{$footer-height} - #{$nav-height});
+  }
+
+  @include phone {
+    min-height: 100vh;
+    max-width: 100%;
+    padding: $spacing-small 0;
+    padding-bottom: $spacing-large + $spacing-small;
+  }
+}
+
+.footer {
+}
+
+.table-of-contents-container {
+  position: absolute;
+  left: calc(100% + #{$spacing-large});
+}
+
+.table-of-contents {
+  position: fixed;
+  top: 92px;
+}

@@ -1,0 +1,111 @@
+.navigation {
+  background-color: $nav-background-color;
+  background-image: $nav-background-image;
+  display: flex;
+
+  &.light {
+    .button {
+      border-bottom: $border-transparent;
+
+      &.selected {
+        background-color: $app-background-color-light;
+        background-image: $app-background-image-light;
+        border-left: $border-transparent;
+        border-right: $border-transparent;
+        color: $app-foreground-color-light;
+        text-shadow: $text-shadow-light;
+      }
+    }
+
+    .filler {
+      border-bottom: 1px solid $nav-background-color;
+    }
+  }
+}
+
+.filler {
+  flex: 1 1 auto;
+  padding: 0 20px;
+  border-bottom: $border-secondary;
+
+  &:first-child {
+    padding-left: 0;
+  }
+
+  &:last-child {
+    padding-right: 0;
+  }
+
+  @include phone {
+    padding: 0 10px;
+  }
+}
+
+.links {
+  flex: 0 1 $app-width - 40px;
+  display: flex;
+}
+
+.name {
+  flex: 1 0 auto;
+  display: flex;
+  align-items: center;
+  padding: 6px 0;
+  padding-right: 20px;
+  color: $nav-foreground-color-highlight;
+  font-size: $font-size-xxxl-px;
+  font-weight: 400;
+  border-bottom: $border-secondary;
+  text-shadow: $text-shadow-dark;
+
+  @include tablet {
+    padding-right: 10px;
+    font-size: $font-size-xxl-px;
+  }
+
+  @include phone {
+    font-size: $font-size-xl-px;
+  }
+
+  @include small-phone {
+    flex: 1 1 auto;
+    font-size: $font-size-l-px;
+  }
+}
+
+.button {
+  @include color-transition($nav-foreground-color, $nav-foreground-color-highlight);
+  flex: 0 1 auto;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  padding: 10px 20px;
+  border: $border-transparent;
+  border-top: none;
+  border-bottom: $border-secondary;
+  font-size: $font-size-l-px;
+  text-shadow: 1px 1px 1px $shade-10;
+
+  &.selected {
+    background: $app-background-color;
+    background-image: $app-background-image;
+    color: $nav-foreground-color-highlight;
+    border: $border-secondary;
+    border-top: none;
+    border-bottom: $border-transparent;
+  }
+
+  &:hover {
+    text-decoration: none;
+  }
+
+  @include phone {
+    padding: 10px;
+    font-size: $font-size-s-px;
+  }
+
+  @include small-phone {
+    padding: 10px 5px;
+  }
+}

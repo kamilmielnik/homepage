@@ -1,0 +1,7 @@
+.link {
+  @include color-transition($app-link-color, $primary);
+
+  &.light {
+    @include color-transition($app-link-color-light, $primary-light);
+  }
+}

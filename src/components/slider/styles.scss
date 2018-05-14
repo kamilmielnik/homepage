@@ -1,0 +1,49 @@
+$track-height: 2px;
+$handle-size: 16px;
+
+.slider {
+  height: 12px;
+
+  :global(.rc-slider-rail),
+  :global(.rc-slider-step),
+  :global(.rc-slider-track) {
+    height: $track-height;
+  }
+
+  :global(.rc-slider-rail) {
+    background-color: $shade-60;
+  }
+
+  :global(.rc-slider-track) {
+    background-color: $primary;
+  }
+
+  :global(.rc-slider-handle) {
+    width: $handle-size;
+    height: $handle-size;
+    margin-top: -$handle-size / 2 + 1;
+    background-color: $primary;
+    border-color: $primary;
+
+    &:active {
+      box-shadow: 0 0 5px $primary;
+      border-color: $primary;
+    }
+  }
+
+  &.light {
+    :global(.rc-slider-track) {
+      background-color: $primary-light;
+    }
+
+    :global(.rc-slider-handle) {
+      background-color: $primary-light;
+      border-color: $primary-light;
+
+      &:active {
+        box-shadow: 0 0 5px $primary-light;
+        border-color: $primary-light;
+      }
+    }
+  }
+}

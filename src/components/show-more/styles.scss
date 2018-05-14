@@ -1,0 +1,13 @@
+.show-more {
+  &.open {
+    .button-container {
+      margin-bottom: 10px;
+    }
+  }
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
