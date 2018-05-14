@@ -8,9 +8,24 @@ export const EXPRESS = {
   url: 'https://expressjs.com/'
 };
 
+export const GRUNT = {
+  name: 'grunt',
+  url: 'https://gruntjs.com/'
+};
+
 export const JEST = {
   name: 'jest',
   url: 'https://facebook.github.io/jest/'
+};
+
+export const KNOCKOUT = {
+  name: 'knockout',
+  url: 'http://knockoutjs.com/'
+};
+
+export const LESS = {
+  name: 'less',
+  url: 'http://lesscss.org/'
 };
 
 export const MOBX = {
