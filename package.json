@@ -1,7 +1,7 @@
 {
   "name": "homepage",
   "description": "Kamil Mielnik's Home Page",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "engines": {
     "node": ">=6"
   },

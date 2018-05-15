@@ -9,7 +9,8 @@ export default {
   npm: 'https://www.npmjs.com/package/webpack-wizard',
   summary: (
     <p>
-      Manages build & development processes configuration & dependencies.
+      Manages your build process. Takes care of all the configuration and dependencies.
+      All you need for developing <code>React</code>-based projects with minimum boilerplate.
     </p>
   ),
   description: (

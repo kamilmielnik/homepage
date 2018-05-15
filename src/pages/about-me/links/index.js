@@ -6,7 +6,7 @@ import Panel from 'components/panel';
 
 const sections = [
   { label: 'cv', url: cvUrl, content: cvUrl },
-  { label: 'pdf', url: cvPdfUrl, content: cvPdfUrl },
+  { label: 'cv pdf', url: cvPdfUrl, content: cvPdfUrl },
   { label: 'github', url: githubUrl, content: githubUrl },
   { label: 'linkedin', url: linkedInUrl, content: linkedInUrl },
   { label: 'email', url: `mailto:${email}`, content: email }
