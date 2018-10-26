@@ -54,7 +54,7 @@ export default {
         My mind is at piece ever since. I don't even have nightmares anymore. Or dreams. Or goals.
       </p>
       <p>
-        It's at <code>1.3.1</code> now. I have added <code>en-US</code> & <code>en-GB</code> locales
+        It's at <code>1.4.0</code> now. I have added <code>en-US</code> & <code>en-GB</code> locales
         support, a mini tutorial and kept the dependencies up to date
         (e.g. upgraded <code>React</code> from <code>15</code> to <code>16</code>).
       </p>
