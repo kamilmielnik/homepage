@@ -19,7 +19,7 @@ const Info = ({ className, theme }) => (
       </h1>
 
       <h2 className={styles.subtitle}>
-        Senior JavaScript Developer
+        JavaScript Developer
       </h2>
 
       <p className={styles.description}>
@@ -34,7 +34,7 @@ const Info = ({ className, theme }) => (
       </p>
 
       <p className={styles.description}>
-        I have nearly 6 years of experience as a professional software developer.
+        I have over 6 years of experience as a professional software developer.
         I was a leader of a small frontend team
         at <Link href="https://codete.com/">Codete</Link> for slightly over 1.5 year.
       </p>
